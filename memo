@@ -1,0 +1,14 @@
+use admin
+db.createUser(
+  {
+    user: "root",
+    pwd: "root",
+    roles: ["userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase"]
+  }
+)
+
+
+-----------
+
+
+docker run -it mongo /bin/bash
